@@ -12,6 +12,10 @@ body main {
     line-height: 1.45;
 }
 
+#left-column-header {
+    font-size: 54px;
+}
+
 main div {
     display: block;
     box-sizing: inherit;
