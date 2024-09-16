@@ -46,7 +46,7 @@
   <div class="container">
     <a class="site-title" href="files/index.html">Nursery School</a>
   </div>
-  <div id="main-menu-container">
+  <div id="main-menu-container" class="sticky-header">
     <div class="container">
       <div class="navbar">
         <div class="dropdown">
@@ -97,3 +97,18 @@
     </div>
   </div>
 </header>
+
+<script>
+window.onscroll = function() {stickyFunction()};
+
+var header = document.getElementById("sticky-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
